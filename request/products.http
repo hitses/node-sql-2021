@@ -1,0 +1,32 @@
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+###
+GET {{api}}/count
+
+###
+GET {{api}}/1
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+  "name": "iMac 27\"",
+  "description": "Piensa en grande",
+  "quantity": 27
+}
+
+###
+PUT {{api}}/8
+Content-Type: application/json
+
+{
+  "name": "iMac 24\"",
+  "description": "Dile hola al nuevo iMac. Tiene todo lo que te gusta de Apple y la superpotencia del chip M1. Mira qué estilazo. Genio y finura. ¿Quién podría resistirse a hacerle un hueco en su vida?",
+  "quantity": 24
+}
+
+###
+DELETE  {{api}}/10
